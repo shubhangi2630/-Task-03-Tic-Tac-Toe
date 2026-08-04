@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic Tac Arena</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <!-- Header -->
+        <header class="header">
+            <div>
+                <p class="mini-title"> • TASK 03</p>
+                <h1>TIC TAC <span>ARENA</span></h1>
+                <p class="subtitle">Think fast. Play smart. Own the board.</p>
+            </div>
+
+            <div class="game-badge">
+                <span>GAME</span>
+                <strong>#03</strong>
+            </div>
+        </header>
+
+
+        <!-- Game Mode -->
+        <section class="mode-section">
+
+            <button class="mode-btn active" data-mode="pvp">
+                👥 Player vs Player
+            </button>
+
+            <button class="mode-btn" data-mode="computer">
+                🤖 vs Computer
+            </button>
+
+        </section>
+
+
+        <!-- Scoreboard -->
+        <section class="scoreboard">
+
+            <div class="score-card">
+                <span class="player-symbol x-symbol">X</span>
+                <div>
+                    <p>PLAYER X</p>
+                    <strong id="scoreX">0</strong>
+                </div>
+            </div>
+
+            <div class="score-card">
+                <span class="player-symbol o-symbol">O</span>
+                <div>
+                    <p>PLAYER O</p>
+                    <strong id="scoreO">0</strong>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Game Status -->
+        <div class="status-box">
+            <span class="status-dot"></span>
+            <p id="status">Player X's turn</p>
+        </div>
+
+
+        <!-- Game Board -->
+        <section class="board" id="board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </section>
+
+
+        <!-- Controls -->
+        <section class="controls">
+
+            <button id="newGame" class="primary-btn">
+                ↻ New Game
+            </button>
+
+            <button id="resetScore" class="secondary-btn">
+                Reset Score
+            </button>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>Built with HTML • CSS • JavaScript</p>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
